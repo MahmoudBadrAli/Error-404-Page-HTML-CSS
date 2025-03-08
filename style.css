@@ -16,7 +16,6 @@ body {
     background: #fff;
 }
 
-
 .image {
     background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
     width: 70%;
@@ -26,6 +25,13 @@ body {
     margin: 20px auto;
 }
 
+@media (max-width: 768px) {
+    .image {
+        width: 100%;
+        height: 385px;
+    }
+}
+
 .image h1 {
     font-weight: 100;
     font-size: 80px;
@@ -33,48 +39,36 @@ body {
     transform: translateY(-20px);
 }
 
+@media (max-width: 768px) {
+    .image h1 {
+        font-size: 65px;
+    }
+}
+
 h3 {
     color: var(--main-color);
     padding: 10px 20px;
-    margin: 20px 0;
+    margin: 10px 0;
     display: inline-block;
-}
-
-@media (max-width: 991px) {
-    a {
-        margin-top: 35px;
-    }
 }
 
 p {
     color: var(--main-color);
-    margin-top: -20px;
+    margin-top: -5px;
 }
 
 a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     text-decoration: none;
-    color: #fff !important;
+    color: #fff;
     background-color: #39ac31;
-    margin: 15px 0;
     padding: 10px 20px;
     display: inline-block;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-
-@media (max-width: 768px) {
-    .image {
-        width: 100%;
-        height: 385px;
-    }
-
-    .image h1 {
-        font-weight: 100;
-        font-size: 65px;
-        color: var(--main-color);
-        transform: translateY(-35px);
-    }
 }
